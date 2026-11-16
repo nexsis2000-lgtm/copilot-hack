@@ -27,14 +27,14 @@
 <form method="POST" action="?/getDelay">
 
     <!-- create dropdown list of airports with id as key -->
-    <select name="airport">
+    <select name="airport" aria-label="Airport">
         {#each airports as airport (airport.id)}
             <option value={airport.id}>{airport.name}</option>
         {/each}
     </select>
 
     <!-- create dropdown list of days with value as key -->
-    <select name="day">
+    <select name="day" aria-label="Day of the week">
         {#each days as day (day.value)}
             <option value={day.value}>{day.name}</option>
         {/each}
